@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  shutdown: graceful
+  netty:
+    connectionTimeout: 30s
+
+spring:
+  application:
+    name: reactive-web-service
+  lifecycle:
+    timeout-per-shutdown-phase: 1m
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: webservice
+
